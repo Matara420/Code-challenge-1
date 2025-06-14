@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 function estimateTransactionFee(amountToSend) {
     const percentFee = 0.015 * amountToSend;
     const fee = Math.min(Math.max(percentFee, 10), 70);
@@ -9,6 +11,5 @@ function estimateTransactionFee(amountToSend) {
     console.log("Send Money Securely!");
 }
 
-// Prompt user input
-const amountInput = prompt("Unatuma Ngapi? (KES):");
+const amountInput = prompt("Unatuma Ngapi? (KES): ");
 estimateTransactionFee(Number(amountInput));

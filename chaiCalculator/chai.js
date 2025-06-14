@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 function calculateChaiIngredients(numberOfCups) {
     const water = 200 * numberOfCups;
     const milk = 50 * numberOfCups;
@@ -12,6 +14,5 @@ function calculateChaiIngredients(numberOfCups) {
     console.log("Enjoy your Chai Bora!");
 }
 
-// Prompt user input
-const cupsInput = prompt("Karibu! How many cups of Chai Bora would you like to make?");
+const cupsInput = prompt("Karibu! How many cups of Chai Bora would you like to make? ");
 calculateChaiIngredients(Number(cupsInput));
